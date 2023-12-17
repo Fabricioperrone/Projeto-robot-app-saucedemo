@@ -127,3 +127,5 @@ Feito com muita dedicação por Fabrício Perrone 🖤
 
 
 >>>>>>> eccef77fce378a69e849be33d9091422a1e4d422
+
+ Pré-requisitos [Instalação_de_requisitos](./requisitos_do_projeto.md)
