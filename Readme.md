@@ -112,13 +112,13 @@ Feito com muita dedicação por Fabrício Perrone 🖤
 
 [Relatório de incidentes](./incidentes.md)
 
-Aqui está um exemplo de execução de todos os testes (Linguagem-Procedural)
+### Aqui está um exemplo de execução de todos os testes (Linguagem-Procedural)
+![Animação_teste-tecnico-procedural](https://github.com/Fabricioperrone/Desafio-Tecnico-Testes-Automatizados-Fabricio-Perrone/assets/69866913/532070d6-caf6-4fa7-a025-3223a53090d4)
 
+
+
+### Aqui está um exemplo de execução de todos os testes (Gherkin-BDD)
 
 ![Animação_teste-tecnico-gherkin-bdd](https://github.com/Fabricioperrone/Desafio-Tecnico-Testes-Automatizados-Fabricio-Perrone/assets/69866913/be8df644-202c-4936-b683-a3d71808bb2f)
-
-
-Aqui está um exemplo de execução de todos os testes (Gherkin-BDD)
-![Animação_teste-tecnico-procedural](https://github.com/Fabricioperrone/Desafio-Tecnico-Testes-Automatizados-Fabricio-Perrone/assets/69866913/532070d6-caf6-4fa7-a025-3223a53090d4)
 
 
