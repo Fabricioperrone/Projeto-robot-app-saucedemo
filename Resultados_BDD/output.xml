@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20231217 12:31:39.589" rpa="false" schemaversion="4">
+<suite id="s1" name="Gherkin Bdd Swaglab" source="d:\automação-teste=técnico-minsait\Robot Framework\WebTest\Swag Lab\gherkin_bdd_swaglab.robot">
+<test id="s1-t1" name="CT3 Adição de Produtos ao Carrinho Após Login" line="8">
+<kw name="Abrir o navegador" library="swagLabResources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231217 12:31:40.299" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20231217 12:31:40.298" endtime="20231217 12:31:42.733"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231217 12:31:42.736" endtime="20231217 12:31:42.968"/>
+</kw>
+<status status="PASS" starttime="20231217 12:31:40.297" endtime="20231217 12:31:42.969"/>
+</kw>
+<kw name="Dado que estou na home page da https://www.saucedemo.com/inventory.html" library="swagLabResources">
+<kw name="Realizar login com credenciais corretas e verificar se o acesso é concedido" library="swagLabResources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${Url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231217 12:31:42.981" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<status status="PASS" starttime="20231217 12:31:42.980" endtime="20231217 12:31:43.873"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${Locator_UserName}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231217 12:31:43.875" endtime="20231217 12:31:43.958"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=${Locator_Login}</arg>
+<arg>text=${User}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231217 12:31:43.960" level="INFO">Typing text 'standard_user' into text field '//input[contains(@placeholder,'Username')]'.</msg>
+<status status="PASS" starttime="20231217 12:31:43.958" endtime="20231217 12:31:44.309"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>locator=${Locator_password}</arg>
+<arg>password=${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20231217 12:31:44.310" level="INFO">Typing password into text field '//input[contains(@placeholder,'Password')]'.</msg>
+<msg timestamp="20231217 12:31:44.391" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20231217 12:31:44.530" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20231217 12:31:44.309" endtime="20231217 12:31:44.530"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>locator=${BTN_Login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231217 12:31:44.532" level="INFO">Clicking button 'login-button'.</msg>
+<status status="PASS" starttime="20231217 12:31:44.530" endtime="20231217 12:31:44.757"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231217 12:31:45.098" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231217 12:31:44.758" endtime="20231217 12:31:45.099"/>
+</kw>
+<status status="PASS" starttime="20231217 12:31:42.979" endtime="20231217 12:31:45.099"/>
+</kw>
+<status status="PASS" starttime="20231217 12:31:42.978" endtime="20231217 12:31:45.099"/>
+</kw>
+<kw name="Quando adicionar o produto &quot;Test.allTheThings() T-Shirt (Red)&quot; no carrinho" library="swagLabResources">
+<kw name="Adicionar um item &quot;Test.allTheThings() T-Shirt (Red)&quot; ao carrinho após o login e verificar se a ação é bem-sucedida" library="swagLabResources" sourcename="Adicionar um item &quot;${Produto}&quot; ao carrinho após o login e verificar se a ação é bem-sucedida">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${SwagLabs}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231217 12:31:45.104" endtime="20231217 12:31:45.148"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${Locator_produto}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231217 12:31:45.149" level="INFO">Clicking element '//div[@class='inventory_item_name '][contains(.,'Test.allTheThings() T-Shirt (Red)')]'.</msg>
+<status status="PASS" starttime="20231217 12:31:45.148" endtime="20231217 12:31:45.258"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//div[@class='inventory_details_name large_size']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231217 12:31:45.258" endtime="20231217 12:31:45.306"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>locator=${CarrinhoCompras}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231217 12:31:45.308" level="INFO">Clicking button '//button[contains(.,'Add to cart')]'.</msg>
+<status status="PASS" starttime="20231217 12:31:45.306" endtime="20231217 12:31:45.442"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231217 12:31:45.701" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231217 12:31:45.442" endtime="20231217 12:31:45.702"/>
+</kw>
+<status status="PASS" starttime="20231217 12:31:45.103" endtime="20231217 12:31:45.703"/>
+</kw>
+<status status="PASS" starttime="20231217 12:31:45.101" endtime="20231217 12:31:45.703"/>
+</kw>
+<kw name="Então o produto &quot;Test.allTheThings() T-Shirt (Red)&quot; deve ser mostrado no carrinho" library="swagLabResources">
+<kw name="Verificar se o produto &quot;Test.allTheThings() T-Shirt (Red)&quot; foi adicionado com sucesso" library="swagLabResources" sourcename="Verificar se o produto &quot;${Produto}&quot; foi adicionado com sucesso">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${Locator_ShopingCart}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231217 12:31:45.707" endtime="20231217 12:31:45.748"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${Locator_ShopingCart}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231217 12:31:45.751" level="INFO">Clicking element '//a[@class='shopping_cart_link'][contains(.,'1')]'.</msg>
+<status status="PASS" starttime="20231217 12:31:45.748" endtime="20231217 12:31:45.842"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${BTN_checkout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231217 12:31:45.844" endtime="20231217 12:31:45.885"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>locator=${BTN_checkout}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231217 12:31:45.887" level="INFO">Clicking button '//button[@class='btn btn_action btn_medium checkout_button '][contains(.,'Checkout')]'.</msg>
+<status status="PASS" starttime="20231217 12:31:45.887" endtime="20231217 12:31:46.005"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231217 12:31:46.171" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231217 12:31:46.007" endtime="20231217 12:31:46.171"/>
+</kw>
+<status status="PASS" starttime="20231217 12:31:45.706" endtime="20231217 12:31:46.171"/>
+</kw>
+<kw name="Informações do cliente &quot;Nome&quot; &quot;Sobrenome&quot; CEP e opções de entrega" library="swagLabResources">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${Locator_Message_Information}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231217 12:31:46.172" endtime="20231217 12:31:46.208"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=${Locator_Placeholder_FirstName}</arg>
+<arg>text=${PESSOA.nome}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231217 12:31:46.210" level="INFO">Typing text 'João' into text field '//input[contains(@placeholder,'First Name')]'.</msg>
+<status status="PASS" starttime="20231217 12:31:46.209" endtime="20231217 12:31:46.377"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=${Locator_Placeholder_LastName}</arg>
+<arg>text=${PESSOA.sobrenome}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231217 12:31:46.378" level="INFO">Typing text 'Fernandes' into text field '//input[contains(@placeholder,'Last Name')]'.</msg>
+<status status="PASS" starttime="20231217 12:31:46.377" endtime="20231217 12:31:46.560"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=${Zipcode}</arg>
+<arg>text=${PESSOA.cep}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231217 12:31:46.562" level="INFO">Typing text '94475800' into text field '//input[contains(@placeholder,'Zip/Postal Code')]'.</msg>
+<status status="PASS" starttime="20231217 12:31:46.561" endtime="20231217 12:31:46.731"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>locator=${BTN_Submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231217 12:31:46.733" level="INFO">Clicking button '//input[contains(@type,'submit')]'.</msg>
+<status status="PASS" starttime="20231217 12:31:46.732" endtime="20231217 12:31:46.938"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//span[@class='title'][contains(.,'Checkout: Overview')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231217 12:31:46.939" endtime="20231217 12:31:46.974"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>locator=${BTN_Finish}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231217 12:31:46.975" level="INFO">Clicking button '//button[@class='btn btn_action btn_medium cart_button'][contains(.,'Finish')]'.</msg>
+<status status="PASS" starttime="20231217 12:31:46.974" endtime="20231217 12:31:47.077"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//span[@class='title'][contains(.,'Checkout: Complete!')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231217 12:31:47.077" endtime="20231217 12:31:47.122"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231217 12:31:47.314" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231217 12:31:47.123" endtime="20231217 12:31:47.315"/>
+</kw>
+<status status="PASS" starttime="20231217 12:31:46.171" endtime="20231217 12:31:47.315"/>
+</kw>
+<status status="PASS" starttime="20231217 12:31:45.705" endtime="20231217 12:31:47.316"/>
+</kw>
+<kw name="Fechar o navegador" library="swagLabResources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231217 12:31:47.445" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231217 12:31:47.324" endtime="20231217 12:31:47.446"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231217 12:31:47.446" endtime="20231217 12:31:49.799"/>
+</kw>
+<status status="PASS" starttime="20231217 12:31:47.323" endtime="20231217 12:31:49.803"/>
+</kw>
+<doc>Verifica item no carrinho de compras</doc>
+<tag>Adicionar_carrinho</tag>
+<status status="PASS" starttime="20231217 12:31:40.295" endtime="20231217 12:31:49.810"/>
+</test>
+<test id="s1-t2" name="CT4 Remover Produto do Carrinho" line="14">
+<kw name="Abrir o navegador" library="swagLabResources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231217 12:31:49.846" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20231217 12:31:49.844" endtime="20231217 12:31:51.962"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231217 12:31:51.962" endtime="20231217 12:31:52.100"/>
+</kw>
+<status status="PASS" starttime="20231217 12:31:49.841" endtime="20231217 12:31:52.102"/>
+</kw>
+<kw name="Dado que estou na home page da https://www.saucedemo.com/inventory.html" library="swagLabResources">
+<kw name="Realizar login com credenciais corretas e verificar se o acesso é concedido" library="swagLabResources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${Url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231217 12:31:52.109" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<status status="PASS" starttime="20231217 12:31:52.108" endtime="20231217 12:31:52.866"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${Locator_UserName}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231217 12:31:52.867" endtime="20231217 12:31:52.946"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=${Locator_Login}</arg>
+<arg>text=${User}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231217 12:31:52.949" level="INFO">Typing text 'standard_user' into text field '//input[contains(@placeholder,'Username')]'.</msg>
+<status status="PASS" starttime="20231217 12:31:52.947" endtime="20231217 12:31:53.243"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>locator=${Locator_password}</arg>
+<arg>password=${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20231217 12:31:53.246" level="INFO">Typing password into text field '//input[contains(@placeholder,'Password')]'.</msg>
+<msg timestamp="20231217 12:31:53.328" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20231217 12:31:53.465" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20231217 12:31:53.244" endtime="20231217 12:31:53.466"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>locator=${BTN_Login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231217 12:31:53.469" level="INFO">Clicking button 'login-button'.</msg>
+<status status="PASS" starttime="20231217 12:31:53.467" endtime="20231217 12:31:53.668"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231217 12:31:54.002" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231217 12:31:53.669" endtime="20231217 12:31:54.003"/>
+</kw>
+<status status="PASS" starttime="20231217 12:31:52.107" endtime="20231217 12:31:54.004"/>
+</kw>
+<status status="PASS" starttime="20231217 12:31:52.106" endtime="20231217 12:31:54.005"/>
+</kw>
+<kw name="E existe o produto &quot;Test.allTheThings() T-Shirt (Red)&quot; no carrinho" library="swagLabResources">
+<kw name="Adicionar um item &quot;Test.allTheThings() T-Shirt (Red)&quot; ao carrinho após o login e verificar se a ação é bem-sucedida" library="swagLabResources" sourcename="Adicionar um item &quot;${Produto}&quot; ao carrinho após o login e verificar se a ação é bem-sucedida">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${SwagLabs}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231217 12:31:54.010" endtime="20231217 12:31:54.059"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${Locator_produto}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231217 12:31:54.061" level="INFO">Clicking element '//div[@class='inventory_item_name '][contains(.,'Test.allTheThings() T-Shirt (Red)')]'.</msg>
+<status status="PASS" starttime="20231217 12:31:54.060" endtime="20231217 12:31:54.181"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//div[@class='inventory_details_name large_size']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231217 12:31:54.182" endtime="20231217 12:31:54.246"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>locator=${CarrinhoCompras}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231217 12:31:54.249" level="INFO">Clicking button '//button[contains(.,'Add to cart')]'.</msg>
+<status status="PASS" starttime="20231217 12:31:54.247" endtime="20231217 12:31:54.409"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231217 12:31:54.694" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231217 12:31:54.410" endtime="20231217 12:31:54.695"/>
+</kw>
+<status status="PASS" starttime="20231217 12:31:54.009" endtime="20231217 12:31:54.695"/>
+</kw>
+<status status="PASS" starttime="20231217 12:31:54.008" endtime="20231217 12:31:54.696"/>
+</kw>
+<kw name="Quando remover o produto &quot;Test.allTheThings() T-Shirt (Red)&quot; do carrinho" library="swagLabResources">
+<kw name="Remover o produto &quot;Test.allTheThings() T-Shirt (Red)&quot; do carrinho" library="swagLabResources">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//button[contains(.,'Remove')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231217 12:31:54.701" endtime="20231217 12:31:54.778"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>locator=//button[contains(.,'Remove')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231217 12:31:54.780" level="INFO">Clicking button '//button[contains(.,'Remove')]'.</msg>
+<status status="PASS" starttime="20231217 12:31:54.779" endtime="20231217 12:31:54.936"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//a[contains(@class,'shopping_cart_link')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231217 12:31:54.938" endtime="20231217 12:31:54.970"/>
+</kw>
+<status status="PASS" starttime="20231217 12:31:54.699" endtime="20231217 12:31:54.970"/>
+</kw>
+<status status="PASS" starttime="20231217 12:31:54.697" endtime="20231217 12:31:54.970"/>
+</kw>
+<kw name="Então o carrinho deve ficar vazio" library="swagLabResources">
+<kw name="Verificar se o carrinho fica vazio" library="swagLabResources">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//a[contains(@class,'shopping_cart_link')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231217 12:31:54.973" endtime="20231217 12:31:55.005"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231217 12:31:55.161" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231217 12:31:55.006" endtime="20231217 12:31:55.162"/>
+</kw>
+<status status="PASS" starttime="20231217 12:31:54.972" endtime="20231217 12:31:55.163"/>
+</kw>
+<status status="PASS" starttime="20231217 12:31:54.971" endtime="20231217 12:31:55.163"/>
+</kw>
+<kw name="Fechar o navegador" library="swagLabResources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20231217 12:31:55.321" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20231217 12:31:55.166" endtime="20231217 12:31:55.322"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231217 12:31:55.322" endtime="20231217 12:31:57.713"/>
+</kw>
+<status status="PASS" starttime="20231217 12:31:55.165" endtime="20231217 12:31:57.714"/>
+</kw>
+<doc>Esse teste verifica a remoção de um produto no carrinho de compras</doc>
+<tag>remover_carrinho</tag>
+<status status="PASS" starttime="20231217 12:31:49.833" endtime="20231217 12:31:57.719"/>
+</test>
+<doc>Essa suite testa as funcionalidades do site, com usuário logado na aplicação</doc>
+<status status="PASS" starttime="20231217 12:31:39.606" endtime="20231217 12:31:57.727"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Adicionar_carrinho</stat>
+<stat pass="1" fail="0" skip="0">remover_carrinho</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Gherkin Bdd Swaglab">Gherkin Bdd Swaglab</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
