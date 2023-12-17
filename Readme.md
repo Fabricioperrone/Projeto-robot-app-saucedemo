@@ -113,4 +113,5 @@ Feito com muita dedicação por Fabrício Perrone 🖤
 [Relatório de incidentes](./incidentes.md)
 
 Aqui está um exemplo de execução de todos os testes (Linguagem-Procedural)
-https://github.com/Fabricioperrone/Desafio-Tecnico-Testes-Automatizados-Fabr-cio-Perrone/blob/main/videos/Anima%C3%A7%C3%A3o_teste-tecnico-procedural.gif
+[Video:1](./videos/Animação_teste-tecnico-procedural.gif)
+[video:2](./videos/Animação_teste-tecnico-gherkin-bdd.gif)
