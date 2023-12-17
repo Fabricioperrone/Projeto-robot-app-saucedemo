@@ -111,3 +111,6 @@ atuação em relação à metodologia Waterfall (Cascata)?
 Feito com muita dedicação por Fabrício Perrone 🖤 
 
 [Relatório de incidentes](./incidentes.md)
+
+[Video:1](./videos/Animação_teste-tecnico-procedural.gif)
+[video:2](./videos/Animação_teste-tecnico-gherkin-bdd.gif)
