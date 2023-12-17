@@ -61,7 +61,7 @@ Remover Produto do Carrinho
 - wrapt                1.16.0
 
 ### Técnicas utilizadas:
-
+ 💻
 - Testes manuais
 - Testes exploratórios
 - Teste funcional
@@ -107,3 +107,7 @@ atuação em relação à metodologia Waterfall (Cascata)?
 - Momento do testes: Na cascata, os testes são realizados após a conclusão do desenvolvimento, enquanto a metodologia Ágil, os testes são contínuos e integrados ao longo de todo o processo de desenvolvimento.
 - Feedback e Adaptação: Na metodologia Ágil, há um feedback contínuo e a capacidade de se adaptar rapidamente a mudanças, enquanto na Cascata, mudanças são difíceis de serem incorporadas após a fase de testes finais.
 - Responsabilidade pela qualidade: Na metodologia Ágil, todo o time é responsável pela qualidade do produto, enquanto na Cascata, os testadores geralmente têm a principal responsabilidade pela garantia de qualidade.
+
+Feito com muita dedicação por Fabrício Perrone 🖤 
+
+[Relatório de incidentes](./incidentes.md)
