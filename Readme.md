@@ -113,5 +113,7 @@ Feito com muita dedicação por Fabrício Perrone 🖤
 [Relatório de incidentes](./incidentes.md)
 
 Aqui está um exemplo de execução de todos os testes (Linguagem-Procedural)
+
 [Video:1](./videos/Animação_teste-tecnico-procedural.gif)
+
 [video:2](./videos/Animação_teste-tecnico-gherkin-bdd.gif)
