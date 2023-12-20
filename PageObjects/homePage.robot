@@ -18,3 +18,4 @@ Quando adicionar o produto "Test.allTheThings() T-Shirt (Red)" no carrinho
 
 E existe o produto "Test.allTheThings() T-Shirt (Red)" no carrinho
     Adicionar um item "Test.allTheThings() T-Shirt (Red)" ao carrinho após o login e verificar se a ação é bem-sucedida
+    

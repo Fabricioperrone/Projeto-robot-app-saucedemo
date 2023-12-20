@@ -21,3 +21,4 @@ Informações do cliente "Nome" "Sobrenome" CEP e opções de entrega
     Click Button    locator=${BTN_Finish}
     Wait Until Element Is Visible    locator=//span[@class='title'][contains(.,'Checkout: Complete!')]
     Capture Page Screenshot
+
