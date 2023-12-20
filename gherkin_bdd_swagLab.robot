@@ -1,10 +1,10 @@
-*** Settings ***
-Documentation    Essa suite testa as funcionalidades do site, com usuário logado na aplicação
-Resource         swagLabResources.robot
-Test Setup       Abrir o navegador
-Test Teardown    Fechar o navegador
+# *** Settings ***
+# Documentation    Essa suite testa as funcionalidades do site, com usuário logado na aplicação
+# Resource         swagLabResources.robot
+# Test Setup       Abrir o navegador
+# Test Teardown    Fechar o navegador
 
-*** Test Cases ***
+# *** Test Cases ***
 CT3 Adição de Produtos ao Carrinho Após Login
     [Documentation]    Verifica item no carrinho de compras
     [Tags]             Adicionar_carrinho
